@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Student Performance Predictor</title>
+
+    <style>
+
+        body{
+            background:#f2f2f2;
+            font-family:Arial;
+        }
+
+        .container{
+            width:400px;
+            margin:auto;
+            margin-top:50px;
+            background:white;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0px 0px 10px gray;
+            text-align:center;
+        }
+
+        input{
+            width:90%;
+            padding:10px;
+            margin:10px;
+        }
+
+        button{
+            padding:10px 20px;
+            background:blue;
+            color:white;
+            border:none;
+            cursor:pointer;
+        }
+
+        h1{
+            color:#333;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Student Performance Predictor</h1>
+
+    <form action="/predict" method="post">
+
+        <input type="text" name="gender" placeholder="Gender (0 or 1)" required>
+
+        <input type="text" name="race" placeholder="Race (0-4)" required>
+
+        <input type="text" name="education" placeholder="Education Level (0-5)" required>
+
+        <input type="text" name="lunch" placeholder="Lunch (0 or 1)" required>
+
+        <input type="text" name="prep" placeholder="Preparation Course (0 or 1)" required>
+
+        <input type="text" name="reading" placeholder="Reading Score" required>
+
+        <input type="text" name="writing" placeholder="Writing Score" required>
+
+        <button type="submit">
+            Predict
+        </button>
+
+    </form>
+
+    <h2>{{ prediction_text }}</h2>
+
+</div>
+
+</body>
+
+</html>
