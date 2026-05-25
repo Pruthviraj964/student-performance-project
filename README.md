@@ -19,4 +19,4 @@ This is an end-to-end machine learning project built using Flask.
 
 ## Deployment
 Live App:
-https://student-performance-project-ymau.onrender.com/predict
+https://student-performance-project-ymau.onrender.com/
